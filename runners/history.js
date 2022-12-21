@@ -47,7 +47,7 @@ async function exhaust_history(agent, parameters) {
 access(`${PATH}/logs`)
 	.catch(() => mkdir(`${PATH}/logs`))
 
-const [ , , ...queries ] = process.argv
+const [ , , key_file, ...queries ] = process.argv
 const search_parameters = {}
 for (const query of queries) {
     const [ name, value ] = query.split(`=`)
@@ -57,9 +57,12 @@ for (const query of queries) {
 if (existsSync(`${PATH}/logs/master.csv`)) {
     unlinkSync(`${PATH}/logs/master.csv`)
 }
-const client = new LiteClient(readFileSync(`${PATH}/user.key`).toString())
+const client = new LiteClient(readFileSync(`${PATH}/${key_file}`).toString())
 
 exhaust_history(client, search_parameters)
+
+//https://canary.discord.com/api/v9/channels/CHANNEL_ID/messages?before=BEFORE_ID&limit=LIMIT
+// ex: node runners/history "channel_id=CHANNEL_ID"
 
 //https://canary.discord.com/api/v9/channels/CHANNEL_ID/messages?before=BEFORE_ID&limit=LIMIT
 // ex: node runners/history "channel_id=CHANNEL_ID"

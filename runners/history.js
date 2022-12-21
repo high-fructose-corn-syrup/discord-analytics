@@ -24,9 +24,9 @@ async function exhaust_history(agent, parameters) {
         if (search_status == `OK`) {
             for (const message of search_results) {
                 if (!existsSync(`${PATH}/logs/master.csv`)) {
-                    writeFileSync(`${PATH}/logs/master.csv`, `message_snowflake,author_snowflake\n`)
+                    writeFileSync(`${PATH}/logs/master.csv`, `message_snowflake,author_snowflake,user\n`)
                 }
-                appendFileSync(`${PATH}/logs/master.csv`, `${message.id},${message.author.id}\n`)
+                appendFileSync(`${PATH}/logs/master.csv`, `${message.id},${message.author.id},${message.author.username}\n`)
                 console.log(message.content)
             }
 

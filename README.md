@@ -16,8 +16,6 @@ Inside the "logs" directory will be a file named "master.csv" which contains the
 ### Reports
 Uses Jupytr notebook. The environment I prefer is Visual Studio Code because I often work along side the other code such as the collecting code. The only reason this is a notebook to begin with is to create a simple distributable with all of the code in one centralized place.
 
-A quick remidner is to make a folder inside "analytics" named "figures". 
-
 Inside `tz_str` you can create a dictionary of your friend's timezones. If you don't do so then the format for a specific section of the code will just use GMT+0.
 
 Throughout the codebase is also commented lines which generally identify usages. The code is fairly messy. 

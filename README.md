@@ -2,6 +2,11 @@
 List of my tools used for fun analytics. 
 
 Ever wanted to see which of your friends is the most popular? Or perhaps you wonder who is the most active? These are simple questions you can answer with this tool. 
+![image](https://user-images.githubusercontent.com/107040758/210154989-0eb72f02-ffd1-4fb2-8ee6-50cc839ba3af.png)
+![image](https://user-images.githubusercontent.com/107040758/210155007-379779e7-d6fb-4105-8784-08ace9dc21e4.png)
+![image](https://user-images.githubusercontent.com/107040758/210155032-be604884-9fdc-4cc2-a9cc-e1a1a0c3d291.png)
+![image](https://user-images.githubusercontent.com/107040758/210155038-8d90e9b7-661e-42ac-b61b-cfa0c8a03a23.png)
+![image](https://user-images.githubusercontent.com/107040758/210155042-45530325-b27f-48af-8b7b-101a163b6a67.png)
 
 ## Usage
 
